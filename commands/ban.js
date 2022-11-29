@@ -21,9 +21,9 @@ module.exports = {
 
     async run(bot, message, args) {
         try {
-            let user = await bot.users.fetch(args._hoistedOptions[0].value)
-            let member = message.guild.members.cache.get(user.id)
-            let reason = args.getString("reason")
+            let user = await bot.users.fetch(args._hoistedOptions[0].value);
+            let member = message.guild.members.cache.get(user.id);
+            let reason = args.getString("reason");
 
             if (!user)
                 return message.reply("No member to ban !");
