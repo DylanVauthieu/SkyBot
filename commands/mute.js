@@ -51,7 +51,7 @@ module.exports = {
             return message.reply("I can't mute this user.");
         if (member && message.member.roles.highest.comparePositionTo(member.roles.highest) <= 0)
             return message.reply("You can't mute this user.");
-        if (member.isCommunicationDisable())
+        if (member.isCommunicationDisabled())
             return message.reply("This member is already mute.");
 
         try {await user.sent(`You have been mute from *${message.guild.name}* by *${message.user.tag}* for *${time}* for the reason : \`${reason}\``)} catch(err) {}
