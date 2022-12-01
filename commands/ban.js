@@ -11,12 +11,14 @@ module.exports = {
             type: "user",
             name: "member",
             description: "The member to ban",
-            required: true
+            required: true,
+            autocomplete: false,
         }, {
             type: "string",
             name: "reason",
             description: "The reason for ban this member",
-            required: false
+            required: false,
+            autocomplete: false,
         }
     ],
 

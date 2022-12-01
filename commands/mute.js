@@ -12,17 +12,20 @@ module.exports = {
             type: "user",
             name: "member",
             description: "The member to mute",
-            required: true
+            required: true,
+            autocomplete: false,
         }, {
             type: "string",
             name: "time",
             description: "The time for the mute",
-            required: true
+            required: true,
+            autocomplete: false,
         }, {
             type: "string",
             name: "reason",
             description: "The reason for mute this member",
-            required: false
+            required: false,
+            autocomplete: false,
         }
     ],
 

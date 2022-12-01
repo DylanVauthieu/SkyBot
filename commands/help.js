@@ -11,7 +11,8 @@ module.exports = {
             type: "string",
             name: "commands",
             description: "More infos in one commands ?",
-            required: false
+            required: false,
+            autocomplete: true,
         }
     ],
 

@@ -12,12 +12,14 @@ module.exports = {
             type: "user",
             name: "member",
             description: "The member to unmute",
-            required: true
+            required: true,
+            autocomplete: false,
         }, {
             type: "string",
             name: "reason",
             description: "The reason for unmute this member",
-            required: false
+            required: false,
+            autocomplete: false,
         }
     ],
 
